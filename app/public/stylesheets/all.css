@@ -64,7 +64,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @media (max-width: 450px) {
-  .d-flex, .main-content_advantages, .main-content_portfolio-section_portfolio, .main-content_team-section .main-content_team-section_article {
+  .d-flex {
     padding: 0 1% 0 1%; }
   .card {
     width: 100% !important;
@@ -103,12 +103,12 @@
 @media (max-width: 991px) {
   .main-content, .page-header, .footer-main {
     padding: .5% 2.5%; }
-  .main-content_advantages .main-content_advantages_article {
-    width: 50%; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_article {
-    width: 50%; }
-  .main-content_team-section_article .main-content_team-section_article_block {
-    width: 50%; } }
+  .card {
+    width: auto !important; }
+    .card__title, .card__title-size-s, .card__title-size-lg, .card__description, .card__subtitlec {
+      text-align: center; }
+  .main-content_team-section__header, .main-content_team-section__slogan {
+    text-align: center; } }
 
 /*! normilize.sass v8.0.1 | MIT License | powered on github.com/necolas/normalize.css */
 /* Document
@@ -379,16 +379,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
 * {
   box-sizing: border-box; }
 
-.d-flex, .main-content_advantages, .main-content_portfolio-section_portfolio, .main-content_team-section .main-content_team-section_article {
+.d-flex {
   display: flex; }
 
-.justify-content-around, .main-content_advantages, .main-content_portfolio-section_portfolio, .main-content_team-section .main-content_team-section_article {
+.justify-content-around {
   justify-content: space-around; }
 
 .justify-content-between {
   justify-content: space-between; }
 
-.flex-wrap, .main-content_advantages, .main-content_portfolio-section_portfolio, .main-content_team-section .main-content_team-section_article {
+.flex-wrap {
   flex-wrap: wrap; }
 
 .flex-nowrap {
@@ -524,102 +524,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 1rem 2rem;
     border-radius: .5rem;
     background-color: #fa5c65; }
-
-.main-content {
-  padding: 1rem 10%; }
-
-.main_content_more-button, .main-content_advantages .main-content_advantages_more-button {
-  color: #fa5c65;
-  font-family: Montserrat;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 20px;
-  background: transparent;
-  padding: .5rem 0;
-  text-transform: uppercase; }
-
-.main-content_advantages {
-  text-align: left; }
-  .main-content_advantages .main-content_advantages_article {
-    width: 30%;
-    margin: auto auto; }
-  .main-content_advantages .main-content_advantages_header {
-    color: #465065;
-    font-family: Montserrat;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase; }
-  .main-content_advantages .main-content_advantages_description {
-    color: #9aa0ab;
-    font-family: "Open Sans";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5; }
-
-.main-content_portfolio-section_portfolio {
-  text-align: left; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_header {
-    color: #314a5b;
-    font-family: Montserrat;
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_slogan {
-    font-family: Montserrat;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_text {
-    color: #9aa0ab;
-    font-family: "Open Sans";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22px; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_article {
-    margin: 0 auto auto auto; }
-
-.main-content_team-section .main-content_team-section_header {
-  color: #314a5b;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 53.86px;
-  text-transform: uppercase; }
-
-.main-content_team-section .main-content_team-section_slogan {
-  color: #9aa0ab;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px; }
-
-.main-content_team-section .main-content_team-section_article {
-  text-align: center; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block {
-    width: 30%;
-    margin: 1% auto; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block_name {
-    color: #314a5b;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 53.86px;
-    text-transform: uppercase; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block_specialty {
-    color: #f0454c;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block_description {
-    color: #9aa0ab;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px; }
 
 .main-content .card {
   width: 30%;
@@ -1063,102 +967,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     border-radius: .5rem;
     background-color: #fa5c65; }
 
-.main-content {
-  padding: 1rem 10%; }
-
-.main_content_more-button, .main-content_advantages .main-content_advantages_more-button {
-  color: #fa5c65;
-  font-family: Montserrat;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 20px;
-  background: transparent;
-  padding: .5rem 0;
-  text-transform: uppercase; }
-
-.main-content_advantages {
-  text-align: left; }
-  .main-content_advantages .main-content_advantages_article {
-    width: 30%;
-    margin: auto auto; }
-  .main-content_advantages .main-content_advantages_header {
-    color: #465065;
-    font-family: Montserrat;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase; }
-  .main-content_advantages .main-content_advantages_description {
-    color: #9aa0ab;
-    font-family: "Open Sans";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5; }
-
-.main-content_portfolio-section_portfolio {
-  text-align: left; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_header {
-    color: #314a5b;
-    font-family: Montserrat;
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_slogan {
-    font-family: Montserrat;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
-    text-transform: uppercase; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_text {
-    color: #9aa0ab;
-    font-family: "Open Sans";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22px; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_article {
-    margin: 0 auto auto auto; }
-
-.main-content_team-section .main-content_team-section_header {
-  color: #314a5b;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 53.86px;
-  text-transform: uppercase; }
-
-.main-content_team-section .main-content_team-section_slogan {
-  color: #9aa0ab;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px; }
-
-.main-content_team-section .main-content_team-section_article {
-  text-align: center; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block {
-    width: 30%;
-    margin: 1% auto; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block_name {
-    color: #314a5b;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 53.86px;
-    text-transform: uppercase; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block_specialty {
-    color: #f0454c;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px; }
-  .main-content_team-section .main-content_team-section_article .main-content_team-section_article_block_description {
-    color: #9aa0ab;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px; }
-
 .main-content .card {
   width: 30%;
   line-height: 2;
@@ -1248,9 +1056,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 @media (max-width: 991px) {
   .main-content, .page-header, .footer-main {
     padding: .5% 2.5%; }
-  .main-content_advantages .main-content_advantages_article {
-    width: 50%; }
-  .main-content_portfolio-section_portfolio .main-content_portfolio-section_portfolio_article {
-    width: 50%; }
-  .main-content_team-section_article .main-content_team-section_article_block {
-    width: 50%; } }
+  .card {
+    width: auto !important; }
+    .card__title, .card__title-size-s, .card__title-size-lg, .card__description, .card__subtitlec {
+      text-align: center; }
+  .main-content_team-section__header, .main-content_team-section__slogan {
+    text-align: center; } }
