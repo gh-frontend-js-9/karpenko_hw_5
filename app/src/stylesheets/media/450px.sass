@@ -1,31 +1,43 @@
 @media ( max-width: 450px )
-    .main-content, .page-header, .footer-main
+    // Main
+    .d-flex
         padding: 0 1% 0 1%
-    .main-content_advantages
-        .main-content_advantages_article
-            width: 100% !important
-    .main-content_portfolio-section_portfolio
-        .main-content_portfolio-section_portfolio_article
-            width: 100% !important
-    .main-content_team-section_article
-        .main-content_team-section_article_block
-            width: 100% !important
-    .footer-main-article
-        margin: 0 auto
-        text-align: center
+    .card
+        width: 100% !important
+        margin: 1.5rem auto !important
+        &__title, &__title-size-s, &__title-size-lg, &__description
+            text-align: center
+    .nav-panel
+        justify-content: space-between
+        &__burger
+            display: inline
+            font-size: 3rem
+        &__list-item
+            margin: 1rem auto !important
+            text-align: center
+            display: block
+        // &__link, &__link_color--red
+            // display: none
+        &__list
+            flex-flow: column wrap
+            width: 100%
+            display: none
+        &__logo
+            margin: auto 0
     // Header
-    .page-header_nav-toggler
-        font-size: 2rem !important
-        margin: auto !important
-        display: block !important
-    .page-header_nav_list_item
-        margin: 1rem auto !important
+        
+    .page-header
         text-align: center
-    // nested a in nav_list_item
-    .page-header_nav_list_item_link
-        display: none
-    .page-header_nav_section_item
-        text-align: center
-        width: 100%
-    .page-header_main_centered-section
-        padding: 0 0 5rem 0 !important
+        &__wrapper
+            width: 100%
+        &__title
+            font-size: 1.5rem
+        &__description
+            font-size: 1.25rem
+        &_main__centered-section
+            padding: 2rem 0 !important
+    // Footer
+    .footer-main
+        &__article
+            text-align: center
+            margin: auto
