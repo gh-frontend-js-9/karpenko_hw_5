@@ -43,10 +43,10 @@ gulp.task('browser-sync', () => {
     browser_sync.init({
         server: {
             baseDir: 'app/',
-            index: "app/views/index.html",
-            directory: true
+            index: "/view/index.html",
+            directory: false
         },
-        open: false
+        open: true
     })
 })
 
